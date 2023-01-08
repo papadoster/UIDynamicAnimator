@@ -14,6 +14,8 @@
 		7F65215929686D1D00E18F44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F65215829686D1D00E18F44 /* Assets.xcassets */; };
 		7F65215C29686D1D00E18F44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F65215A29686D1D00E18F44 /* LaunchScreen.storyboard */; };
 		7F6521642968712900E18F44 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6521632968712900E18F44 /* SecondViewController.swift */; };
+		7F652166296880B300E18F44 /* ThridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F652165296880B300E18F44 /* ThridViewController.swift */; };
+		7F652168296B35A800E18F44 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F652167296B35A800E18F44 /* FourthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		7F65215B29686D1D00E18F44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F65215D29686D1D00E18F44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F6521632968712900E18F44 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		7F652165296880B300E18F44 /* ThridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThridViewController.swift; sourceTree = "<group>"; };
+		7F652167296B35A800E18F44 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				7F65215129686D1B00E18F44 /* SceneDelegate.swift */,
 				7F65215329686D1B00E18F44 /* ViewController.swift */,
 				7F6521632968712900E18F44 /* SecondViewController.swift */,
+				7F652165296880B300E18F44 /* ThridViewController.swift */,
+				7F652167296B35A800E18F44 /* FourthViewController.swift */,
 				7F65215529686D1B00E18F44 /* Main.storyboard */,
 				7F65215829686D1D00E18F44 /* Assets.xcassets */,
 				7F65215A29686D1D00E18F44 /* LaunchScreen.storyboard */,
@@ -141,8 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F652168296B35A800E18F44 /* FourthViewController.swift in Sources */,
 				7F6521642968712900E18F44 /* SecondViewController.swift in Sources */,
 				7F65215429686D1B00E18F44 /* ViewController.swift in Sources */,
+				7F652166296880B300E18F44 /* ThridViewController.swift in Sources */,
 				7F65215029686D1B00E18F44 /* AppDelegate.swift in Sources */,
 				7F65215229686D1B00E18F44 /* SceneDelegate.swift in Sources */,
 			);
