@@ -19,6 +19,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "firstVC"
     }
 
     override func viewDidAppear(_ animated: Bool) {

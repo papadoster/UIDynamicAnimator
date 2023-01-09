@@ -14,6 +14,7 @@ class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "secondVC"
         
     }
     
@@ -51,9 +52,9 @@ class SecondViewController: UIViewController {
         
         collision.addBoundary(withIdentifier: "bottomBoundary" as NSCopying,
                               from: CGPoint(x: 0, y: view.bounds.size.height - 100),
-                              to: CGPoint(x: view.bounds.size.width, y: view.bounds.size.height))
+                              to: CGPoint(x: view.bounds.size.width, y: view.bounds.size.height - 100))
         
-        collision.collisionDelegate = self
+//        collision.collisionDelegate = self
         animator.addBehavior(collision)
          
         
@@ -64,26 +65,26 @@ class SecondViewController: UIViewController {
 
 }
 
-extension SecondViewController: UICollisionBehaviorDelegate {
-    
-    
-    func collisionBehavior(_ behavior: UICollisionBehavior, beganContactFor item: UIDynamicItem, withBoundaryIdentifier identifier: NSCopying?, at p: CGPoint) {
-        let identifier = identifier as? String
-        let kbottomBoundary = "bottomBoundary"
-        
-        if identifier == kbottomBoundary {
-            
-            UIView.animate(withDuration: 2.0) {
-                let view = item as? UIView
-                view?.backgroundColor = .orange
-                view?.alpha = 0.0
-                view?.transform = CGAffineTransform(scaleX: 2.0, y: 2.0)
-            } completion: { finished in
-                let view = item as? UIView
-                behavior.removeItem(item)
-                view?.removeFromSuperview()
-            }
-        }
-         
-    }
-}
+//extension SecondViewController: UICollisionBehaviorDelegate {
+//
+//
+//    func collisionBehavior(_ behavior: UICollisionBehavior, beganContactFor item: UIDynamicItem, withBoundaryIdentifier identifier: NSCopying?, at p: CGPoint) {
+//        let identifier = identifier as? String
+//        let kbottomBoundary = "bottomBoundary"
+//
+//        if identifier == kbottomBoundary {
+//
+//            UIView.animate(withDuration: 2.0) {
+//                let view = item as? UIView
+//                view?.backgroundColor = .orange
+//                view?.alpha = 0.0
+//                view?.transform = CGAffineTransform(scaleX: 2.0, y: 2.0)
+//            } completion: { finished in
+//                let view = item as? UIView
+//                behavior.removeItem(item)
+//                view?.removeFromSuperview()
+//            }
+//        }
+//
+//    }
+//}

@@ -16,6 +16,7 @@ class ThridViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "thirdVC"
         
     }
     
@@ -52,6 +53,9 @@ class ThridViewController: UIViewController {
         
         let collision = UICollisionBehavior(items: [squareViews])
         collision.translatesReferenceBoundsIntoBoundary = true
+        collision.addBoundary(withIdentifier: "bottomBoundary" as NSCopying,
+                              from: CGPoint(x: 0, y: view.bounds.size.height - 100),
+                              to: CGPoint(x: view.bounds.size.width, y: view.bounds.size.height - 100))
         pushBehavior = UIPushBehavior(items: [squareViews], mode: .continuous)
         animator.addBehavior(collision)
         animator.addBehavior(pushBehavior)

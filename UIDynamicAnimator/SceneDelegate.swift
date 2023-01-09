@@ -17,6 +17,37 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        let firstVC = ViewController()
+        let secondVC = SecondViewController()
+        let thirdVC = ThridViewController()
+        let fourthVC = FourthViewController()
+        let fifthVC = FifthViewController()
+        
+        // nav
+        
+        let firstNavController = UINavigationController(rootViewController: firstVC)
+        let secondNavController = UINavigationController(rootViewController: secondVC)
+        let thridNavController = UINavigationController(rootViewController: thirdVC)
+        let fourthNavController = UINavigationController(rootViewController: fourthVC)
+        let fifthNavController = UINavigationController(rootViewController: fifthVC)
+        
+        let tabBarVC = UITabBarController()
+        
+        tabBarVC.setViewControllers([firstNavController, secondNavController, thridNavController,fourthNavController,fifthNavController], animated: true)
+        
+        // Чтобы сразу показать вторую картинку!
+        secondVC.loadViewIfNeeded()
+        thirdVC.loadViewIfNeeded()
+        fourthVC.loadViewIfNeeded()
+        fifthVC.loadViewIfNeeded()
+        
+        
+        
+        self.window?.rootViewController = tabBarVC
+        self.window?.backgroundColor = UIColor.systemGray6
+        self.window?.makeKeyAndVisible()
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
