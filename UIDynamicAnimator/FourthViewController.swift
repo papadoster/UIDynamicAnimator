@@ -42,7 +42,7 @@ class FourthViewController: UIViewController {
         squareView.backgroundColor = .green
         squareView.center = view.center
         squareViewAnchorView = UIView(frame: CGRect(x: 60, y: 0, width: 20, height: 20))
-        squareViewAnchorView.backgroundColor = .brown
+        squareViewAnchorView.backgroundColor = .green
         squareView.addSubview(squareViewAnchorView)
         view.addSubview(squareView)
     }
@@ -52,7 +52,7 @@ class FourthViewController: UIViewController {
     func createAnchorView() {
         
         anchorView = UIView(frame: CGRect(x: squareView.center.x + 80, y: squareView.center.y + 80, width: 20, height: 20))
-        anchorView.backgroundColor = .red
+        anchorView.backgroundColor = .white
         view.addSubview(anchorView)
     }
     
